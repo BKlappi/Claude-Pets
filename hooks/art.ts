@@ -8,11 +8,11 @@ export type Run = { kind: Kind; text: string }
 
 export type SpeciesName = 'blob' | 'moth' | 'ghost' | 'crab' | 'sprout'
 
-// hatchling 10x6, sprite 14x6, companion 18x8, legend 22x10 pixels; each eye
+// hatchling 12x6, sprite 14x6, companion 18x8, legend 22x10 pixels; each eye
 // a 2x2 square on even rows and columns, so it fills exactly one cell.
 export const SPRITES: Record<SpeciesName, readonly (readonly string[])[]> = {
   blob: [
-    ['...####...', '..######..', '.#ee##ee#.', '.#ee##ee#.', 'ss.ssss.ss', '.ssssssss.'],
+    ['....####....', '..########..', '.#ee####ee#.', '.#ee####ee#.', 's.ssssssss.s', '.ssssssssss.'],
     ['.....####.....', '...########...', '..##ee##ee##..', '.###ee##ee###.', '##############', '.##.##..##.##.'],
     [
       '........##........',
@@ -38,7 +38,7 @@ export const SPRITES: Record<SpeciesName, readonly (readonly string[])[]> = {
     ],
   ],
   moth: [
-    ['.#......#.', '..#....#..', '.#ee##ee#.', '##ee##ee##', 'ss.ssss.ss', '.ssssssss.'],
+    ['.#........#.', '..#.####.#..', '.#ee####ee#.', '##ee####ee##', 's.ssssssss.s', '.ssssssssss.'],
     ['..#........#..', '...#......#...', '##.#ee##ee#.##', '###*ee##ee*###', '.###*####*###.', '..##..##..##..'],
     [
       '...#..........#...',
@@ -64,7 +64,7 @@ export const SPRITES: Record<SpeciesName, readonly (readonly string[])[]> = {
     ],
   ],
   ghost: [
-    ['..######..', '.########.', '.#ee##ee#.', '.#ee##ee#.', 's#s#ss#s#s', '.ssssssss.'],
+    ['...######...', '.##########.', '.#ee####ee#.', '##ee####ee##', 's#s#ssss#s#s', '.ssssssssss.'],
     ['....######....', '..##########..', '.###ee##ee###.', '####ee##ee####', '.############.', '.#.##.##.##.#.'],
     [
       '......######......',
@@ -90,7 +90,7 @@ export const SPRITES: Record<SpeciesName, readonly (readonly string[])[]> = {
     ],
   ],
   crab: [
-    ['#........#', '##.####.##', '.#ee##ee#.', '##ee##ee##', 'ss.ssss.ss', '.ssssssss.'],
+    ['##........##', '.#.######.#.', '.#ee####ee#.', '##ee####ee##', 's.ssssssss.s', '.ssssssssss.'],
     ['##..........##', '#.#..####..#.#', '.###ee##ee###.', '..##ee##ee##..', '.############.', '#.#..#..#..#.#'],
     [
       '###............###',
@@ -116,7 +116,7 @@ export const SPRITES: Record<SpeciesName, readonly (readonly string[])[]> = {
     ],
   ],
   sprout: [
-    ['...#..#...', '....##....', '.#ee##ee#.', '.#ee##ee#.', 'ss.ssss.ss', '.ssssssss.'],
+    ['..##....##..', '....####....', '.#ee####ee#.', '.#ee####ee#.', 's.ssssssss.s', '.ssssssssss.'],
     ['..###....###..', '....##..##....', '...#ee##ee#...', '..##ee##ee##..', '...########...', '....##..##....'],
     [
       '.###..........###.',
