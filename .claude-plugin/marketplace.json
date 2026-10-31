@@ -1,0 +1,6 @@
+{
+  "name": "claude-pets",
+  "description": "Pixel-art companions for Claude Code",
+  "owner": { "name": "BKlappi" },
+  "plugins": [{ "name": "pet", "source": "./" }]
+}

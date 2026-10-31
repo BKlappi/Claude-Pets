@@ -1,0 +1,11 @@
+{
+  "name": "pet",
+  "version": "0.2.0",
+  "description": "A pixel-art companion above your Claude Code prompt that reacts to what Claude does, levels up, evolves, and follows you across every project",
+  "author": { "name": "BKlappi" },
+  "license": "MIT",
+  "homepage": "https://github.com/BKlappi/Claude-Pets",
+  "repository": "https://github.com/BKlappi/Claude-Pets",
+  "keywords": ["pet", "companion", "mod", "fun", "tamagotchi"],
+  "types": "./types/index.d.ts"
+}
